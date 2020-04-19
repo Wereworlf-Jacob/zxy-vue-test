@@ -1,0 +1,38 @@
+.el-container {
+    height: 100%;
+    background-color: #fff9f4;
+}
+.el-header {
+    border-bottom: 1px solid #79BBFF;
+}
+.el-main {
+    padding: 20px 0 20px 0;
+}
+.el-menu-item {
+    font-size: 16px;
+}
+.el-footer {
+    border-top: 1px solid #79BBFF;
+}
+.el-menu-item:hover {
+    color: #409EFF !important;
+    background-color: transparent !important;
+}
+.el-submenu__title:hover{
+    color: #409EFF !important;
+    background-color: transparent !important;
+}
+.el-menu-item.is-active {
+    background-color: transparent !important;
+}
+.el-menu {
+    background: transparent;
+}
+.el-table th,
+.el-table td {
+    padding-left: 10px;
+}
+.el-table tr,
+.el-table {
+    background-color: transparent;
+}

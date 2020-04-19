@@ -1,0 +1,109 @@
+{
+    "inputNumberAttributesData": [
+        {
+            "param": "value / v-model",
+            "explain": "绑定值",
+            "type": "number",
+            "choice": "—",
+            "default": "0"
+        },{
+            "param": "min",
+            "explain": "设置计数器允许的最小值",
+            "type": "number",
+            "choice": "—",
+            "default": "-Infinity"
+        },{
+            "param": "max",
+            "explain": "设置计数器允许的最大值",
+            "type": "number",
+            "choice": "—",
+            "default": "Infinity"
+        },{
+            "param": "step",
+            "explain": "计数器步长",
+            "type": "number",
+            "choice": "—",
+            "default": "1"
+        },{
+            "param": "step-strictly",
+            "explain": "是否只能输入 step 的倍数",
+            "type": "number",
+            "choice": "—",
+            "default": "false"
+        },{
+            "param": "precision",
+            "explain": "数值精度",
+            "type": "number",
+            "choice": "—",
+            "default": "—"
+        },{
+            "param": "size",
+            "explain": "计数器尺寸",
+            "type": "string",
+            "choice": "large, small",
+            "default": "—"
+        },{
+            "param": "disabled",
+            "explain": "是否禁用计数器",
+            "type": "boolean",
+            "choice": "—",
+            "default": "false"
+        },{
+            "param": "controls",
+            "explain": "是否使用控制按钮",
+            "type": "boolean",
+            "choice": "—",
+            "default": "true"
+        },{
+            "param": "controls-position",
+            "explain": "控制按钮位置",
+            "type": "string",
+            "choice": "right",
+            "default": "—"
+        },{
+            "param": "name",
+            "explain": "原生属性",
+            "type": "string",
+            "choice": "—",
+            "default": "—"
+        },{
+            "param": "label",
+            "explain": "输入框关联的label文字",
+            "type": "string",
+            "choice": "—",
+            "default": "—"
+        },{
+            "param": "placeholder",
+            "explain": "输入框默认 placeholder",
+            "type": "string",
+            "choice": "—",
+            "default": "—"
+        }
+    ],
+    "inputNumberEventsData": [
+        {
+            "name": "change",
+            "explain": "绑定值被改变时触发",
+            "param": "currentValue, oldValue"
+        },{
+            "name": "blur",
+            "explain": "在组件 Input 失去焦点时触发",
+            "param": "(event: Event)"
+        },{
+            "name": "focus",
+            "explain": "在组件 Input 获得焦点时触发",
+            "param": "(event: Event)"
+        }
+    ],
+    "inputNumberMethodsData": [
+        {
+            "name": "focus",
+            "explain": "使 input 获取焦点",
+            "param": "—"
+        },{
+            "name": "select",
+            "explain": "选中 input 中的文字",
+            "param": "—"
+        }
+    ]
+}

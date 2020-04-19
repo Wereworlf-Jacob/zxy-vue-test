@@ -1,0 +1,553 @@
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+}
+::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+/* Track */
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(124, 120, 100, 0.4);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(94, 94, 93, 0.8);
+  -webkit-box-shadow: inset 0 0 6px rgb(124, 120, 100);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(169,169,169,0.4);
+}
+canvas { width: 100%; height: 100% }
+.divBox {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: transparent;
+}
+.loginPage {
+    width: 100%;
+    height: 100%;
+}
+/*登陆页太阳系运转图*/
+.solarsys{
+    width: 800px;
+    height: 800px;
+    position: relative;
+    margin: 0 auto;
+    /* background-color: #000000; */
+    padding: 0;
+    transform: scale(1);
+  }
+  
+/*太阳*/
+.sun {
+  left:357px;
+  top:357px;
+  height: 90px;
+  width: 90px;
+  background-color: rgb(248,107,35);
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgb(248,107,35), -5px -5px 10px rgb(248,107,35), 5px -5px 10px rgb(248,107,35), -5px 5px 10px rgb(248,107,35);
+  position: absolute;
+  margin: 0;
+}
+
+/*水星*/
+.mercury {
+  left:337.5px;
+  top:395px;
+  height: 10px;
+  width: 10px;
+  background-color: rgb(166,138,56);
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 62.5px 5px;
+  animation: rotate 1.5s infinite linear;
+}
+
+/*水星轨道*/
+.mercuryOrbit {
+  left:342.5px;
+  top:342.5px;
+  height: 115px;
+  width: 115px;
+  background-color: transparent;
+  border-radius: 50%;
+  border-style: dashed;
+  border-color: gray;
+  position: absolute;
+  border-width: 1px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*金星*/
+.venus {
+  left:309px;
+  top:389px;
+  height: 22px;
+  width: 22px;
+  background-color: rgb(246,157,97);
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 91px 11px;
+  animation: rotate 3.84s infinite linear;
+}
+
+/*金星轨道*/
+.venusOrbit {
+  left:320px;
+  top:320px;
+  height: 160px;
+  width: 160px;
+  background-color: transparent;
+  border-radius: 50%;
+  border-style: dashed;
+  border-color: gray;
+  position: absolute;
+  border-width: 1px;
+  /*margin: 100px;*/
+  /*transform-origin: -75px -75px;*/
+  /*animation: rotate 4s infinite linear;*/
+  margin: 0px;
+  padding: 0px;
+}
+
+/*地球*/
+.earth {
+  left:266.5px;
+  top:391px;
+  height: 18px;
+  width: 18px;
+  background-color: rgb(115,114,174);
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 134px 9px;
+  animation: rotate 6.25s infinite linear;
+}
+
+/*地球轨道*/
+.earthOrbit {
+  left:275px;
+  top:275px;
+  height: 250px;
+  width: 250px;
+  background-color: transparent;
+  border-radius: 50%;
+  border-style: dashed;
+  border-color: gray;
+  position: absolute;
+  border-width: 1px;
+  /*margin: 100px;*/
+  /*transform-origin: -75px -75px;*/
+  /*animation: rotate 4s infinite linear;*/
+  margin: 0px;
+  padding: 0px;
+}
+
+/*火星*/
+.mars {
+  left:222.5px;
+  top:392.5px;
+  height: 15px;
+  width: 15px;
+  background-color: rgb(140,119,63);
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 177.5px 7.5px;
+  animation: rotate 11.75s infinite linear;
+}
+
+/*火星轨道*/
+.marsOrbit {
+  left:230px;
+  top:230px;
+  height: 340px;
+  width: 340px;
+  background-color: transparent;
+  border-radius: 50%;
+  border-style: dashed;
+  border-color: gray;
+  position: absolute;
+  border-width: 1px;
+  /*margin: 100px;*/
+  /*transform-origin: -75px -75px;*/
+  /*animation: rotate 4s infinite linear;*/
+  margin: 0px;
+  padding: 0px;
+}
+
+/*木星*/
+.jupiter {
+  left:134px;
+  top:379px;
+  height: 42px;
+  width: 42px;
+  background-color: rgb(156,164,143);
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 266px 21px;
+  animation: rotate 74.04s infinite linear;
+}
+
+/*木星轨道*/
+.jupiterOrbit {
+  left:155px;
+  top:155px;
+  height: 490px;
+  width: 490px;
+  background-color: transparent;
+  border-radius: 50%;
+  border-style: dashed;
+  border-color: gray;
+  position: absolute;
+  border-width: 1px;
+  /*margin: 100px;*/
+  /*transform-origin: -75px -75px;*/
+  /*animation: rotate 4s infinite linear;*/
+  margin: 0px;
+  padding: 0px;
+}
+
+/*土星*/
+.saturn {
+  left:92px;
+  top:387px;
+  height: 26px;
+  width: 26px;
+  background-color: rgb(215,171,68);
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 308px 13px;
+  animation: rotate 183.92s infinite linear;
+}
+
+/*土星轨道*/
+.saturnOrbit {
+  left:105px;
+  top:105px;
+  height: 590px;
+  width: 590px;
+  background-color: transparent;
+  border-radius: 50%;
+  border-style: dashed;
+  border-color: gray;
+  position: absolute;
+  border-width: 1px;
+  /*margin: 100px;*/
+  /*transform-origin: -75px -75px;*/
+  /*animation: rotate 4s infinite linear;*/
+  margin: 0px;
+  padding: 0px;
+}
+
+/*天王星*/
+.uranus {
+  left:41.5px;
+  top:386.5px;
+  height: 27px;
+  width: 27px;
+  background-color: rgb(164,192,206);
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 358.5px 13.5px;
+  animation: rotate 524.46s infinite linear;
+}
+
+/*天王星轨道*/
+.uranusOrbit {
+  left:55px;
+  top:55px;
+  height: 690px;
+  width: 690px;
+  background-color: transparent;
+  border-radius: 50%;
+  border-style: dashed;
+  border-color: gray;
+  position: absolute;
+  border-width: 1px;
+  /*margin: 100px;*/
+  /*transform-origin: -75px -75px;*/
+  /*animation: rotate 4s infinite linear;*/
+  margin: 0px;
+  padding: 0px;
+}
+
+/*海王星*/
+.neptune {
+  left:10px;
+  top:390px;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(133,136,180);
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 390px 10px;
+  animation: rotate 1028.76s infinite linear;
+}
+/*海王星轨道*/
+.neptuneOrbit {
+  left:20px;
+  top:20px;
+  height: 760px;
+  width: 760px;
+  background-color: transparent;
+  border-radius: 50%;
+  border-style: dashed;
+  border-color: gray;
+  position: absolute;
+  border-width: 1px;
+  /*margin: 100px;*/
+  /*transform-origin: -75px -75px;*/
+  /*animation: rotate 4s infinite linear;*/
+  margin: 0px;
+  padding: 0px;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+/*end*/
+.loginInput {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    margin-top: -200px;
+    background: url(../images/loginBg1.png) no-repeat;
+}
+.loginOp {
+    width: 80%;
+    margin-top: 60px;
+}
+.qqqq {
+      position: absolute;
+      top: -5px;
+      left: -5px;;
+      height: 50px;
+      width: 10px;
+      background-color: #8d29ff;
+      border-radius: 5px;
+
+  /* animation-name:Effect1, Effect2;
+  animation-duration:3s, 2s;
+  animation-timing-function:linear, linear;
+  animation-delay:0, 2s;
+  animation-iteration-count:1, infinite;
+  animation-fill-mode:forwards, forwards;
+  animation-direction:normal, alternate; */
+
+  animation: Effect1 3s linear infinite alternate;
+
+  /* animation-name:Effect1, Effect2;
+  animation-duration:2s, 3s;
+  animation-timing-function:linear, linear;
+  animation-delay:0, 2s;
+  animation-iteration-count:infinite, infinite;
+  animation-fill-mode:forwards, forwards;
+  animation-direction:normal, alternate; */
+}
+@keyframes Effect1{
+      0%{top: 0px;  left: -3px;}
+      /* 20%{top: 297px; left: -5px; width: 10px; height: 30px;}
+      60%{top: 297px; left: 497px; width: 30px; height: 10px;}
+      80%{top: -5px; left: 497px; width: 10px; height: 30px;} 
+      100%{top: -5px;  left: -5px; width: 30px; height: 10px;}*/
+      100%{top: 250px; left: -3px;}
+  }
+@keyframes Effect2{
+    0%{top: 297px;  left: -5px;}
+    100%{top: 297px; left: 497px;}
+}
+.logoText {
+  width: 100%; 
+  height: 60px; 
+  text-align: center; 
+  line-height: 60px; 
+  color: #7200a1; 
+  font-size: 42px; 
+  font-weight:bold;
+}
+.logoText:hover {
+  cursor: pointer;
+}
+.menuLeft {
+  padding-left: 200px;
+  background: url(../images/element.png) no-repeat left;
+}
+.colorPage p,
+.colorPage h3 {
+  line-height: 40px;
+}
+.colorPage .el-row {
+  margin-bottom: 30px;
+}
+.BrandColorBox {
+  border-radius: 5px;
+  padding: 20px;
+  color: #fff;
+  background: #409EFF;
+}
+.SuccessColorBox {
+  border-radius: 5px;
+  padding: 20px;
+  color: #fff;
+  background: #67C23A;
+}
+.WarningColorBox {
+  border-radius: 5px;
+  padding: 20px;
+  color: #fff;
+  background: #E6A23C;
+}
+.DangerColorBox {
+  border-radius: 5px;
+  padding: 20px;
+  color: #fff;
+  background: #F56C6C;
+}
+.InfoColorBox {
+  border-radius: 5px;
+  padding: 20px;
+  color: #fff;
+  background: #909399;
+}
+.el-footer p {
+  line-height: 59px;
+  text-align: center;
+}
+/* .sideMenu {
+  width: 100%;
+} */
+/* .secondPadding {
+  padding: 0 20px;
+} */
+.layoutDiv .el-row {
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.layoutDiv .el-col {
+  border-radius: 4px;
+}
+.layoutDiv .bg-purple-dark {
+  background: #99a9bf;
+}
+.layoutDiv .bg-purple {
+  background: #d3dce6;
+}
+.layoutDiv .bg-purple-light {
+  background: #e5e9f2;
+}
+.layoutDiv .grid-content {
+  border-radius: 4px;
+  min-height: 36px;
+  line-height: 36px;
+  padding-left: 20px;
+}
+.layoutDiv .row-bg {
+  padding: 10px 0;
+  background-color: #f9fafc;
+}
+.layoutDiv h2 {
+  line-height: 60px;
+}
+.layoutDiv p {
+  line-height: 30px;
+}
+.elementDiv {
+  height: 100%;
+}
+.elementDiv .sideMenuDiv,
+.elementDiv .containerDiv  {
+  overflow: auto;
+}
+.containerDiv {
+  padding: 0 20px;
+}
+.layoutDiv li {
+  line-height: 30px;
+}
+
+.layoutDiv .el-header, .layoutDiv .el-footer {
+  background-color: #B3C0D1;
+  color: #333;
+  text-align: center;
+  line-height: 60px;
+}
+
+.layoutDiv .el-aside {
+  background-color: #D3DCE6;
+  color: #333;
+  text-align: center;
+  line-height: 200px;
+}
+
+.layoutDiv .el-main {
+  background-color: rgb(206, 255, 209);
+  color: #333;
+  text-align: center;
+  line-height: 160px;
+}
+
+.layoutDiv .el-container:nth-child(5) .el-aside,
+.layoutDiv .el-container:nth-child(6) .el-aside {
+  line-height: 260px;
+}
+
+.layoutDiv .el-container:nth-child(7) .el-aside {
+  line-height: 320px;
+}
+.layoutDiv .text {
+  line-height: 40px;
+  text-align: right;
+}
+/* .my-autocomplete {
+  li {
+    line-height: normal;
+    padding: 7px;
+
+    .name {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .addr {
+      font-size: 12px;
+      color: #b4b4b4;
+    }
+
+    .highlighted .addr {
+      color: #ddd;
+    }
+  }
+} */
+
+.my-autocomplete li {
+  line-height: normal;
+  padding: 7px;
+}
+.my-autocomplete li .name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.my-autocomplete li .addr {
+  font-size: 12px;
+  color: #b4b4b4;
+} 
+.my-autocomplete li .highlighted .addr {
+  color: #ddd;
+}

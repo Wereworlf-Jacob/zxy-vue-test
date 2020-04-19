@@ -1,0 +1,65 @@
+{
+    "info": [
+        {
+          "param": "span",
+          "explain": "栅格占据的列数",
+          "type": "number",
+          "choice": "—",
+          "default": "24"
+        },{
+            "param": "offset",
+            "explain": "栅格左侧的间隔格数",
+            "type": "number",
+            "choice": "—",
+            "default": "0"
+          },{
+            "param": "push",
+            "explain": "栅格向右移动格数",
+            "type": "number",
+            "choice": "—",
+            "default": "0"
+          },{
+            "param": "pull",
+            "explain": "栅格向左移动格数",
+            "type": "number",
+            "choice": "—",
+            "default": "0"
+          },{
+            "param": "xs",
+            "explain": "<768px 响应式栅格数或者栅格属性对象",
+            "type": "number/object (例如： {span: 4, offset: 4})",
+            "choice": "—",
+            "default": "—"
+          },{
+            "param": "sm",
+            "explain": "≥768px 响应式栅格数或者栅格属性对象",
+            "type": "number/object (例如： {span: 4, offset: 4})",
+            "choice": "—",
+            "default": "—"
+          },{
+            "param": "md",
+            "explain": "≥992px 响应式栅格数或者栅格属性对象",
+            "type": "number/object (例如： {span: 4, offset: 4})",
+            "choice": "—",
+            "default": "—"
+          },{
+            "param": "lg",
+            "explain": "≥1200px 响应式栅格数或者栅格属性对象",
+            "type": "number/object (例如： {span: 4, offset: 4})",
+            "choice": "—",
+            "default": "—"
+          },{
+            "param": "xl",
+            "explain": "≥1920px 响应式栅格数或者栅格属性对象",
+            "type": "number/object (例如： {span: 4, offset: 4})",
+            "choice": "—",
+            "default": "—"
+          },{
+            "param": "tag",
+            "explain": "自定义元素标签",
+            "type": "string",
+            "choice": "*",
+            "default": "div"
+          }
+    ]
+}
