@@ -2,7 +2,7 @@
 <template>
     <div class="colorPage">
         <el-row>
-            <h3>主色</h3>
+            <h3>主色test</h3>
             <p>Element 主要品牌颜色是鲜艳、友好的蓝色。</p>
             <el-col :span="8">
                 <div class="BrandColorBox">Brand Color
